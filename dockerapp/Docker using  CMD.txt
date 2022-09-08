@@ -1,0 +1,21 @@
+===================================== CREATE DOCKER FILE AND BUILD =====================================
+01) Create Docker file.
+02) Add commands to docker file.
+03) get project latest build.
+04) open CMD in project path.
+
+===================================== CREATE DOCKER CONTAINER PROJECT IMAGE ============================
+01) Execute `docker build -t [project jar name].jar .`
+02) Check `docker image ls` using image details previously created
+03) Execute `docker run -p [docker container port]:[local port] [jar file name].jar`
+
+===================================== PUSH TO DOCKER HUB TO PROJECT IMAGE ==============================
+01) Execure `docker image ls` for display project image files and select.
+02) Execute `docker tag [docker image name].jar [docker user name]/[docker image name].jar`
+03) Execute `docker iamge ls` for check previously created image status.
+04) Execute `docker push [docker user name]/[docker image name].jar`:[tag name]
+
+
+===================================== PULL FROM DOCKER HUB TO PROJECT IMAGE ==============================
+01) Execute `docker pull [docker username]/[docker image name].jar`
+02) Execute `docker run -p [docker container port]:[local port] [jar file name].jar`
