@@ -5,6 +5,7 @@ Build Restful webservices utilizing Spring Boot and Deploy on Docker
 
 01) Java 1.8
 02) Maven 3.8
+03) Docker
 
 ## Project setup
 
